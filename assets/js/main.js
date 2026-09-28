@@ -440,6 +440,7 @@
   appendList("languages-list", data.languages);
   appendList("certifications-list", data.certifications);
   appendList("education-list", data.education);
+  window.formatJapaneseHeadings();
   observeReveals();
   setupCounters();
   setupActiveNav();
