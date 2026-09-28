@@ -1,236 +1,404 @@
 window.profileData = {
-  heroKicker: ["12+ years", "8 years lead", "Japan-facing", "End-to-end delivery"],
-  heroSummary:
-    "Senior software engineer trusted to lead enterprise delivery, align stakeholders, and keep execution stable.",
-  heroProof: ["PL / PM / BrSE leadership", "Enterprise delivery ownership", "Stakeholder communication in Japanese"],
-  focusBanner: {
-    title: "Executive-level reliability in delivery",
-    text:
-      "Best for teams that need a senior engineer who can own direction, reduce delivery risk, and communicate with confidence."
+  "heroKicker": [
+    "Japanese business communication",
+    "JLPT N2"
+  ],
+  "heroSummary": "12+ years in software development and 8 years in leadership. I build business systems, coordinate teams, and work directly with Japanese clients from requirements and design through release and maintenance.",
+  "heroProof": [
+    "C# / .NET Core",
+    "Java / Spring Boot",
+    "PL / PM / BrSE"
+  ],
+  "focusBanner": {
+    "title": "Engineering, teams, and clients",
+    "text": "I connect technical implementation with client requirements and team progress, drawing on experience in manufacturing, insurance, IoT, and e-commerce."
   },
-  metrics: [
-    { value: 12, suffix: "+", label: "Years in delivery" },
-    { value: 8, suffix: "+", label: "Years leading teams" },
-    { value: 4, suffix: "", label: "Core business sectors" },
-    { value: 3, suffix: "", label: "Lead, align, deliver" }
-  ],
-  standoutSignals: [
+  "metrics": [
     {
-      value: "12+",
-      icon: "layers",
-      title: "Years in enterprise execution",
-      text: "Long-cycle delivery across build, release, and support."
+      "value": 12,
+      "suffix": "+",
+      "label": "Years in development"
     },
     {
-      value: "8Y",
-      icon: "compass",
-      title: "Leadership responsibility",
-      text: "PL, PM, and BrSE ownership in live delivery environments."
+      "value": 8,
+      "suffix": "",
+      "label": "Years in leadership"
     },
     {
-      value: "JP",
-      icon: "globe",
-      title: "Japan-facing fluency",
-      text: "Trusted in client communication, requirement alignment, and follow-through."
+      "value": 2,
+      "suffix": "",
+      "label": "Years in project management"
+    },
+    {
+      "value": 4,
+      "suffix": "",
+      "label": "Core business domains"
     }
   ],
-  charts: {
-    roleFocus: [
-      { label: "Implementation", value: 96, color: "#1e8a78" },
-      { label: "Leadership", value: 82, color: "#d1a85f" },
-      { label: "Japan communication", value: 88, color: "#13232d" },
-      { label: "Testing and maintenance", value: 91, color: "#4e8fcb" }
-    ],
-    domainMix: [
-      { label: "Manufacturing", value: 32, color: "#1e8a78" },
-      { label: "Insurance", value: 24, color: "#13232d" },
-      { label: "IoT", value: 22, color: "#d1a85f" },
-      { label: "E-commerce", value: 22, color: "#4e8fcb" }
-    ]
-  },
-  values: [
+  "values": [
     {
-      icon: "flow",
-      title: "End-to-End Delivery",
-      text: "Owns execution from design through maintenance."
+      "icon": "flow",
+      "title": "Requirements through release",
+      "text": "Clarify requirements, contribute to system and database design, implement features, test, and support release and maintenance. Rakuuru brings these stages together."
     },
     {
-      icon: "users",
-      title: "Leadership and Coordination",
-      text: "Leads people, schedule, and execution with control."
+      "icon": "users",
+      "title": "Team leadership",
+      "text": "Manage progress, issues, and member schedules; provide technical support and create an environment where teammates can ask for help and collaborate."
     },
     {
-      icon: "chat",
-      title: "Japan-Facing Communication",
-      text: "Handles specs, issues, and stakeholder conversations with confidence."
+      "icon": "chat",
+      "title": "Communication with Japanese clients",
+      "text": "Discuss requirements and specifications, investigate technical questions, and propose implementation approaches. Business communication in Japanese, backed by JLPT N2."
     },
     {
-      icon: "grid",
-      title: "Multi-Domain Engineering",
-      text: "Delivery experience across manufacturing, insurance, IoT, and e-commerce."
+      "icon": "shield",
+      "title": "Problem-solving and quality",
+      "text": "Share issues early, investigate root causes, work through solutions, and follow up on recurrence prevention."
     }
   ],
-  domains: ["Manufacturing", "Insurance", "IoT", "E-commerce"],
-  focusPoints: [
-    "Strongest in enterprise delivery for Japan-focused teams.",
-    "Best with C#, Java, .NET Core, Spring Boot, and SQL.",
-    "Moves smoothly between execution, leadership, and bridge roles.",
-    "Calm under pressure and dependable near release."
+  "domains": [
+    "Manufacturing",
+    "Insurance",
+    "IoT",
+    "E-commerce"
   ],
-  timeline: [
+  "focusPoints": [
+    "Manufacturing: Hoya, C# and .NET Core.",
+    "Insurance: EIS, Java and Spring Boot.",
+    "IoT: Yoko and the Stak Android application.",
+    "Commerce: Rakuuru and Sofmap, C# and ASP.NET."
+  ],
+  "timeline": [
     {
-      range: "2012 - 2014",
-      title: "Foundation in web, mobile, and game development",
-      text: "Built the technical base for long-term delivery work."
+      "range": "2012 - 2014",
+      "title": "Foundation in web, mobile, and game development",
+      "text": "PHP web applications, Java Android development, and C/C++ games."
     },
     {
-      range: "2016 - 2018",
-      title: "Enterprise Java systems and business applications",
-      text: "Shifted into business systems and operational product work."
+      "range": "2016 - 2018",
+      "title": "Enterprise Java systems and business applications",
+      "text": "Java business applications, followed by ASP.NET e-commerce maintenance."
     },
     {
-      range: "2018 - 2022",
-      title: "Bridge roles, C# systems, and customer-facing work",
-      text: "Expanded into leadership, bridge work, and enterprise ownership."
+      "range": "2018 - 2022",
+      "title": "Bridge roles, C# systems, and customer-facing work",
+      "text": "Requirements, design, and release at Rakuuru; PL, BrSE, and PM roles across business and IoT applications."
     },
     {
-      range: "2022 - Now",
-      title: "Senior delivery for manufacturing and Japan projects",
-      text: "Leads high-trust execution for manufacturing platforms."
+      "range": "2022 - Now",
+      "title": "Manufacturing systems with C# and .NET Core",
+      "text": "Hoya: implementation, testing, and technical discussions with clients in a PL / member role."
     }
   ],
-  projectFilters: ["All", "Leadership", "Japan-facing", "Enterprise", "IoT"],
-  projects: [
-    {
-      name: "Hoya",
-      period: "Aug 2022 - Present",
-      domain: "Manufacturing system",
-      role: "PL / Member",
-      filterTags: ["Leadership", "Japan-facing", "Enterprise"],
-      stack: ["C#", ".NET Core", "EF Core", "PowerShell", "Git"],
-      summary: "Owned implementation and customer-facing technical decisions.",
-      impact: "Demonstrates trust in production-critical delivery."
-    },
-    {
-      name: "Yoko",
-      period: "Aug 2021 - Jul 2022",
-      domain: "IoT system",
-      role: "PL / Member",
-      filterTags: ["Leadership", "Japan-facing", "IoT"],
-      stack: ["C#", ".NET Core", "EF Core", "ReactJS", "Docker", "Kubernetes"],
-      summary: "Led implementation, testing, and stakeholder-facing technical work.",
-      impact: "Shows wide delivery control across platform layers."
-    },
-    {
-      name: "EIS System",
-      period: "Jun 2020 - Present",
-      domain: "Insurance system",
-      role: "PL / Member",
-      filterTags: ["Leadership", "Japan-facing", "Enterprise"],
-      stack: ["Java", "Spring Boot", "Play Framework", "AWS", "ReactJS", "Jenkins"],
-      summary: "Covered build, testing, monitoring, and long-term maintenance.",
-      impact: "Proves continuity in regulated, high-complexity systems."
-    },
-    {
-      name: "Rakuuru",
-      period: "2018 - 2020",
-      domain: "Used goods purchasing system",
-      role: "PL / BrSE / Member",
-      filterTags: ["Leadership", "Japan-facing", "Enterprise"],
-      stack: ["C#", "ASP.NET", "MSSQL", "JavaScript", "Python", "IIS"],
-      summary: "Led work from requirements through release across multiple environments.",
-      impact: "Strong proof of full-cycle ownership and bridge capability."
-    },
-    {
-      name: "Stak Application",
-      period: "Jan 2020 - May 2021",
-      domain: "IoT Android application",
-      role: "PM",
-      filterTags: ["Leadership", "IoT"],
-      stack: ["Java", "AWS", "Git"],
-      summary: "Managed delivery of an IoT Android application program.",
-      impact: "Shows management ownership beyond direct implementation."
-    },
-    {
-      name: "Sofmap",
-      period: "Jul 2017 - Jan 2018",
-      domain: "E-commerce system",
-      role: "Engineer",
-      filterTags: ["Japan-facing", "Enterprise"],
-      stack: ["C#", "ASP.NET", "MSSQL", "JavaScript", "XML"],
-      summary: "Supported and maintained a live e-commerce platform.",
-      impact: "Adds trust in operationally active web systems."
-    }
+  "projectFilters": [
+    "All",
+    "Leadership",
+    "Japan-facing",
+    "Enterprise",
+    "IoT"
   ],
-  skillGroups: [
+  "projects": [
     {
-      icon: "server",
-      title: "Backend and Business Systems",
-      description: "Core stack for enterprise execution.",
-      items: [
-        { label: "C#", logo: "devicon-csharp-plain colored" },
-        { label: "Java", logo: "devicon-java-plain colored" },
-        { label: ".NET Core", logo: "devicon-dot-net-plain colored" },
-        { label: "Spring Boot", logo: "devicon-spring-plain colored" },
-        { label: "ASP.NET", logo: "devicon-dotnetcore-plain colored" },
-        { label: "EF Core", logo: "devicon-dot-net-plain colored" },
-        { label: "SQL", logo: "devicon-azuresqldatabase-plain colored" }
+      "name": "Rakuuru",
+      "period": "2018 - 2020",
+      "domain": "Used goods purchasing system",
+      "role": "PL / BrSE / Member",
+      "filterTags": [
+        "Leadership",
+        "Japan-facing",
+        "Enterprise"
+      ],
+      "stack": [
+        "C#",
+        "ASP.NET",
+        "MSSQL",
+        "JavaScript",
+        "Python",
+        "IIS"
+      ],
+      "summary": "Requirements, design, development, and release for a used-goods purchasing system.",
+      "contributions": [
+        "Researched comparable applications and clarified specifications in client meetings.",
+        "Prepared design documents and contributed to database design.",
+        "Implemented and verified changes across local, development, and validation environments.",
+        "Supported releases and maintenance, with documentation across the delivery stages."
       ]
     },
     {
-      icon: "monitor",
-      title: "Frontend and Application Layer",
-      description: "Supporting range for product-facing delivery.",
-      items: [
-        { label: "JavaScript", logo: "devicon-javascript-plain colored" },
-        { label: "ReactJS", logo: "devicon-react-original colored" },
-        { label: "JSP", logo: "devicon-java-plain colored" },
-        { label: "PHP", logo: "devicon-php-plain colored" },
-        { label: "Python", logo: "devicon-python-plain colored" },
-        { label: "Android", logo: "devicon-android-plain colored" }
+      "name": "Hoya",
+      "period": "Aug 2022 - Present",
+      "domain": "Manufacturing system",
+      "role": "PL / Member",
+      "filterTags": [
+        "Leadership",
+        "Japan-facing",
+        "Enterprise"
+      ],
+      "stack": [
+        "C#",
+        ".NET Core",
+        "EF Core",
+        "PowerShell",
+        "Git"
+      ],
+      "summary": "C#/.NET development for a manufacturing system.",
+      "contributions": [
+        "Implemented features from specifications and wrote unit tests.",
+        "Discussed technical questions with clients.",
+        "Participated in design, integration and system testing, and acceptance testing."
       ]
     },
     {
-      icon: "cloud",
-      title: "Data and Infrastructure",
-      description: "Infrastructure and data tools used in active delivery.",
-      items: [
-        { label: "SQL Server", logo: "devicon-microsoftsqlserver-plain colored" },
-        { label: "MySQL", logo: "devicon-mysql-original colored" },
-        { label: "PostgreSQL", logo: "devicon-postgresql-plain colored" },
-        { label: "Oracle", logo: "devicon-oracle-original colored" },
-        { label: "Redis", logo: "devicon-redis-plain colored" },
-        { label: "AWS", logo: "devicon-amazonwebservices-plain-wordmark colored" },
-        { label: "Docker", logo: "devicon-docker-plain colored" },
-        { label: "Kubernetes", logo: "devicon-kubernetes-plain colored" }
+      "name": "Yoko",
+      "period": "Aug 2021 - Jul 2022",
+      "domain": "IoT system",
+      "role": "PL / Member",
+      "filterTags": [
+        "Leadership",
+        "Japan-facing",
+        "IoT"
+      ],
+      "stack": [
+        "C#",
+        ".NET Core",
+        "EF Core",
+        "ReactJS",
+        "Docker",
+        "Kubernetes"
+      ],
+      "summary": "Development and testing for an IoT system.",
+      "contributions": [
+        "Implemented features from specifications using C# and .NET Core.",
+        "Handled unit testing and technical consultation with clients.",
+        "Worked with ReactJS, Docker, and Kubernetes in the project environment."
       ]
     },
     {
-      icon: "spark",
-      title: "Operating Strengths",
-      description: "Execution habits that reduce delivery risk.",
-      items: [
-        { label: "Requirement hearing", icon: "chat" },
-        { label: "Technical consultation", icon: "bulb" },
-        { label: "Schedule control", icon: "clock" },
-        { label: "Testing", icon: "shield" },
-        { label: "Release support", icon: "rocket" },
-        { label: "Maintenance", icon: "wrench" }
+      "name": "EIS System",
+      "period": "Jun 2020 - Present",
+      "domain": "Insurance system",
+      "role": "PL / Member",
+      "filterTags": [
+        "Leadership",
+        "Japan-facing",
+        "Enterprise"
+      ],
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Play Framework",
+        "AWS",
+        "ReactJS",
+        "Jenkins"
+      ],
+      "summary": "Java development and ongoing support for an insurance system.",
+      "contributions": [
+        "Implemented features from specifications and performed unit testing.",
+        "Participated in integration testing, monitoring, and maintenance.",
+        "Discussed technical implementation with clients."
+      ]
+    },
+    {
+      "name": "Stak Application",
+      "period": "Jan 2020 - May 2021",
+      "domain": "IoT Android application",
+      "role": "PM",
+      "filterTags": [
+        "Leadership",
+        "IoT"
+      ],
+      "stack": [
+        "Java",
+        "AWS",
+        "Git"
+      ],
+      "summary": "Project management for an IoT Android application.",
+      "contributions": [
+        "Served as PM on the Android application project.",
+        "Project work covered implementation, unit testing, and integration testing.",
+        "Discussed technical questions with clients."
+      ]
+    },
+    {
+      "name": "Sofmap",
+      "period": "Jul 2017 - Jan 2018",
+      "domain": "E-commerce system",
+      "role": "Engineer",
+      "filterTags": [
+        "Japan-facing",
+        "Enterprise"
+      ],
+      "stack": [
+        "C#",
+        "ASP.NET",
+        "MSSQL",
+        "JavaScript",
+        "XML"
+      ],
+      "summary": "Maintenance and development for an e-commerce website.",
+      "contributions": [
+        "Implemented and tested changes to the live website.",
+        "Worked with C#, ASP.NET, and SQL Server.",
+        "Supported ongoing system maintenance."
       ]
     }
   ],
-  selfPr:
-    "Calm under pressure, deliberate in execution, and reliable when delivery risk is high.",
-  leadershipPoints: [
-    "Brings calm to complex delivery situations",
-    "Prefers clear ownership over noisy execution",
-    "Balances technical detail with stakeholder clarity"
+  "skillGroups": [
+    {
+      "icon": "server",
+      "title": "Backend and Business Systems",
+      "description": "Primary technologies used across manufacturing, insurance, and commerce projects.",
+      "items": [
+        {
+          "label": "C#",
+          "logo": "devicon-csharp-plain colored"
+        },
+        {
+          "label": "Java",
+          "logo": "devicon-java-plain colored"
+        },
+        {
+          "label": ".NET Core",
+          "logo": "devicon-dot-net-plain colored"
+        },
+        {
+          "label": "Spring Boot",
+          "logo": "devicon-spring-plain colored"
+        },
+        {
+          "label": "ASP.NET",
+          "logo": "devicon-dotnetcore-plain colored"
+        },
+        {
+          "label": "EF Core",
+          "logo": "devicon-dot-net-plain colored"
+        },
+        {
+          "label": "SQL",
+          "logo": "devicon-azuresqldatabase-plain colored"
+        }
+      ]
+    },
+    {
+      "icon": "monitor",
+      "title": "Frontend and Application Layer",
+      "description": "Additional technologies used across web, mobile, and scripting work.",
+      "items": [
+        {
+          "label": "JavaScript",
+          "logo": "devicon-javascript-plain colored"
+        },
+        {
+          "label": "ReactJS",
+          "logo": "devicon-react-original colored"
+        },
+        {
+          "label": "JSP",
+          "logo": "devicon-java-plain colored"
+        },
+        {
+          "label": "PHP",
+          "logo": "devicon-php-plain colored"
+        },
+        {
+          "label": "Python",
+          "logo": "devicon-python-plain colored"
+        },
+        {
+          "label": "Android",
+          "logo": "devicon-android-plain colored"
+        }
+      ]
+    },
+    {
+      "icon": "cloud",
+      "title": "Data and Infrastructure",
+      "description": "Databases, cloud platforms, and containers used in project work.",
+      "items": [
+        {
+          "label": "SQL Server",
+          "logo": "devicon-microsoftsqlserver-plain colored"
+        },
+        {
+          "label": "MySQL",
+          "logo": "devicon-mysql-original colored"
+        },
+        {
+          "label": "PostgreSQL",
+          "logo": "devicon-postgresql-plain colored"
+        },
+        {
+          "label": "Oracle",
+          "logo": "devicon-oracle-original colored"
+        },
+        {
+          "label": "Redis",
+          "logo": "devicon-redis-plain colored"
+        },
+        {
+          "label": "AWS",
+          "logo": "devicon-amazonwebservices-plain-wordmark colored"
+        },
+        {
+          "label": "Docker",
+          "logo": "devicon-docker-plain colored"
+        },
+        {
+          "label": "Kubernetes",
+          "logo": "devicon-kubernetes-plain colored"
+        }
+      ]
+    },
+    {
+      "icon": "spark",
+      "title": "Delivery Practices",
+      "description": "Requirements, implementation, quality, and ongoing support.",
+      "items": [
+        {
+          "label": "Requirement hearing",
+          "icon": "chat"
+        },
+        {
+          "label": "Technical consultation",
+          "icon": "bulb"
+        },
+        {
+          "label": "Schedule control",
+          "icon": "clock"
+        },
+        {
+          "label": "Testing",
+          "icon": "shield"
+        },
+        {
+          "label": "Release support",
+          "icon": "rocket"
+        },
+        {
+          "label": "Maintenance",
+          "icon": "wrench"
+        }
+      ]
+    }
   ],
-  languages: ["Japanese: business communication", "English: conversation and reading"],
-  certifications: [
+  "selfPr": "I share problems early, investigate the cause, and work with the team and client on a solution and steps to prevent recurrence.",
+  "leadershipPoints": [
+    "Track progress, issues, and member schedules",
+    "Provide technical support and encourage team collaboration",
+    "Clarify requirements and explain implementation options"
+  ],
+  "languages": [
+    "Japanese: business communication",
+    "English: conversation and reading"
+  ],
+  "certifications": [
     "JLPT N2",
     "National Student Mathematics Olympiad, Calculus, 3rd place",
     "Higher diploma in software engineering"
   ],
-  education: ["Bachelor's degree", "Thuy Loi University, graduated 2014"]
+  "education": [
+    "Bachelor's degree",
+    "Thuy Loi University, graduated 2014"
+  ]
 };

@@ -137,27 +137,6 @@
     });
   };
 
-  const renderSignals = () => {
-    const node = document.getElementById("signal-grid");
-    if (!node) {
-      return;
-    }
-
-    data.standoutSignals.forEach((signal) => {
-      const card = document.createElement("article");
-      card.className = "signal-card reveal";
-      card.setAttribute("data-spotlight", "signal");
-      const icon = `<span class="card-icon">${iconSvg(signal.icon)}</span>`;
-      card.innerHTML = [
-        icon,
-        `<p class="signal-value">${signal.value}</p>`,
-        `<p class="signal-title">${signal.title}</p>`,
-        `<p class="signal-text">${signal.text}</p>`
-      ].join("");
-      node.appendChild(card);
-    });
-  };
-
   const renderValues = () => {
     const node = document.getElementById("value-grid");
     if (!node) {
@@ -175,81 +154,6 @@
       ].join("");
       node.appendChild(card);
     });
-  };
-
-  const renderCharts = () => {
-    const barNode = document.getElementById("bar-chart");
-    const donutNode = document.getElementById("donut-chart");
-    const legendNode = document.getElementById("donut-legend");
-
-    if (barNode) {
-      data.charts.roleFocus.forEach((item, index) => {
-        const row = document.createElement("div");
-        row.className = "bar-row reveal";
-        row.innerHTML = [
-          '<div class="bar-meta">',
-          `<span class="bar-label">${item.label}</span>`,
-          `<span class="bar-value">${item.value}%</span>`,
-          "</div>",
-          `<div class="bar-track"><span class="bar-fill" style="--bar-width:${item.value}%; --bar-color:${item.color}; --bar-delay:${index * 120}ms;"></span></div>`
-        ].join("");
-        barNode.appendChild(row);
-      });
-    }
-
-    if (donutNode) {
-      const radius = 74;
-      const circumference = 2 * Math.PI * radius;
-      const total = data.charts.domainMix.reduce((sum, item) => sum + item.value, 0);
-      let offsetCursor = 0;
-
-      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      svg.setAttribute("viewBox", "0 0 220 220");
-      svg.setAttribute("class", "donut-svg");
-
-      const baseRing = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      baseRing.setAttribute("cx", "110");
-      baseRing.setAttribute("cy", "110");
-      baseRing.setAttribute("r", String(radius));
-      baseRing.setAttribute("class", "donut-base");
-      svg.appendChild(baseRing);
-
-      data.charts.domainMix.forEach((item, index) => {
-        const segment = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        const segmentLength = (item.value / total) * circumference;
-        segment.setAttribute("cx", "110");
-        segment.setAttribute("cy", "110");
-        segment.setAttribute("r", String(radius));
-        segment.setAttribute("class", "donut-segment");
-        segment.setAttribute("stroke", item.color);
-        segment.setAttribute("stroke-dasharray", `${segmentLength} ${circumference - segmentLength}`);
-        segment.setAttribute("stroke-dashoffset", `${-offsetCursor}`);
-        segment.style.setProperty("--segment-length", `${segmentLength}`);
-        segment.style.setProperty("--segment-delay", `${index * 180}ms`);
-        svg.appendChild(segment);
-        offsetCursor += segmentLength;
-      });
-
-      donutNode.appendChild(svg);
-
-      const center = document.createElement("div");
-      center.className = "donut-center";
-      center.innerHTML = '<span class="donut-total">4</span><span class="donut-caption">Core domains</span>';
-      donutNode.appendChild(center);
-    }
-
-    if (legendNode) {
-      data.charts.domainMix.forEach((item) => {
-        const row = document.createElement("div");
-        row.className = "legend-row";
-        row.innerHTML = [
-          `<span class="legend-dot" style="background:${item.color};"></span>`,
-          `<span class="legend-label">${item.label}</span>`,
-          `<span class="legend-value">${item.value}%</span>`
-        ].join("");
-        legendNode.appendChild(row);
-      });
-    }
   };
 
   const renderSnapshot = () => {
@@ -310,10 +214,10 @@
         `<h3>${project.name}</h3>`,
         `<p class="project-meta">${project.domain} | ${project.period}</p>`,
         "</div>",
-        `<span class="tag">${project.filterTags[0]}</span>`,
+        `<span class="tag">${window.filterLabels[project.filterTags[0]]}</span>`,
         "</div>",
         `<p class="project-summary">${project.summary}</p>`,
-        `<p class="project-summary"><strong>Why it matters:</strong> ${project.impact}</p>`
+        `<ul class="project-contributions">${project.contributions.map((item) => `<li>${item}</li>`).join("")}</ul>`
       ].join("");
 
       const tags = document.createElement("div");
@@ -374,6 +278,7 @@
     const updateButtons = () => {
       Array.from(node.querySelectorAll(".filter-button")).forEach((button) => {
         button.classList.toggle("is-active", button.dataset.filter === activeFilter);
+        button.setAttribute("aria-pressed", String(button.dataset.filter === activeFilter));
       });
     };
 
@@ -382,7 +287,7 @@
       button.type = "button";
       button.className = "filter-button";
       button.dataset.filter = filterName;
-      button.textContent = filterName;
+      button.textContent = window.filterLabels[filterName];
       button.addEventListener("click", () => {
         activeFilter = filterName;
         updateButtons();
@@ -527,8 +432,6 @@
   setText("focus-text", data.focusBanner.text);
   renderHeroAccent();
   renderMetrics();
-  renderSignals();
-  renderCharts();
   renderValues();
   renderSnapshot();
   renderProjectFilters();
